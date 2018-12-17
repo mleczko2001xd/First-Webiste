@@ -1,1 +1,7 @@
-background
+html,body{
+  height:100%;
+}
+.bg-image{
+background-image: url();
+height:100%;
+}
