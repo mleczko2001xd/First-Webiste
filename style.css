@@ -3,6 +3,9 @@ html,body{
 font-style: italic;
  overflow-x: hidden;
 
+
+
+
 }
 *{
   box-sizing: border-box;
@@ -30,7 +33,7 @@ width: auto;
 }
 .navigation__list{
   font-family:monospace;
-  font-size: 5vh;
+  font-size: 5vw;
 padding: 20px;
 list-style-type: none;
 
@@ -79,42 +82,49 @@ font-size: 50px;
   transform: translate(-50%, -50%);
   font-size: 40px;
   padding: 40px;
-  background-color: rgba(25, 2, 0, 0.9);
+  background-color: rgba(2, 2, 11, 0.9);
   color:  white;
-  border-radius: 20%;
+  border-radius: 26%;
   border: 0px;
   cursor: crosshair;
   display: flex;
   z-index: 2;
 
 }
+.link__newsettler a:hover{
+background-color: red;
 
+}
 ​.link__newsettler a:visited, a:link, a:hover
 {
     text-decoration: none;
 }
 
-.copyright{
+.footer{
 background-color: grey;
-color: white;
-display: flex;
+height: 3.5em;
 }
+.footer__icons{
+font-size: 3em;
+ color: black;
+ display: flex;
+ justify-content: space-around;
+}
+.footer__icons__link{
+color: black;
+}
+
 
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
 
   }
-
 }
 @media all and (max-width: 600px) {
   .navigation {
     -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-
-
+    flex-flow: column;
 }
-.navigation__list{
-  font-size: 2vh;
-}
+
   }
